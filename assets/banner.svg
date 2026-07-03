@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0F1E"/>
+      <stop offset="100%" stop-color="#0F1830"/>
+    </linearGradient>
+    <linearGradient id="barFade" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2FD3C8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2FD3C8" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="lineGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F2B807" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F2B807" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F2B807" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- faint grid -->
+  <g stroke="#26314A" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+  </g>
+  <g stroke="#26314A" stroke-width="1" opacity="0.2">
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+  </g>
+
+  <!-- background bar chart, right side -->
+  <g transform="translate(760,0)">
+    <rect x="0"   y="210" width="26" height="70" rx="3" fill="url(#barFade)"/>
+    <rect x="38"  y="180" width="26" height="100" rx="3" fill="url(#barFade)"/>
+    <rect x="76"  y="150" width="26" height="130" rx="3" fill="url(#barFade)"/>
+    <rect x="114" y="190" width="26" height="90" rx="3" fill="url(#barFade)"/>
+    <rect x="152" y="120" width="26" height="160" rx="3" fill="url(#barFade)"/>
+    <rect x="190" y="95"  width="26" height="185" rx="3" fill="url(#barFade)"/>
+    <rect x="228" y="60"  width="26" height="220" rx="3" fill="url(#barFade)"/>
+    <rect x="266" y="140" width="26" height="140" rx="3" fill="url(#barFade)"/>
+    <rect x="304" y="100" width="26" height="180" rx="3" fill="url(#barFade)"/>
+    <rect x="342" y="45"  width="26" height="235" rx="3" fill="url(#barFade)"/>
+    <rect x="380" y="75"  width="26" height="205" rx="3" fill="url(#barFade)"/>
+
+    <!-- pulse / trend line over the bars -->
+    <polyline points="13,230 51,200 89,175 127,205 165,140 203,110 241,80 279,160 317,120 355,60 393,90"
+              fill="none" stroke="#F2B807" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <circle cx="355" cy="60" r="5" fill="#F2B807"/>
+  </g>
+
+  <!-- left accent tick -->
+  <rect x="60" y="70" width="6" height="150" rx="3" fill="#2FD3C8"/>
+
+  <!-- name + role -->
+  <text x="90" y="130" font-family="'Segoe UI Semibold','Segoe UI',Arial,sans-serif" font-size="54" font-weight="700" fill="#EAF0FA">Ajay Kumar</text>
+  <text x="92" y="168" font-family="Consolas,'SF Mono',monospace" font-size="19" letter-spacing="3" fill="#2FD3C8">DATA ANALYST · AI/ML ENTHUSIAST</text>
+
+  <!-- tagline -->
+  <text x="92" y="205" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#7C8BA8">Turning raw data into decisions — SQL · Power BI · Python</text>
+
+  <!-- KPI chips -->
+  <g font-family="Consolas,'SF Mono',monospace" font-size="13" fill="#7C8BA8">
+    <rect x="92" y="228" width="150" height="36" rx="6" fill="#121A2E" stroke="#26314A"/>
+    <text x="106" y="251" fill="#EAF0FA" font-size="15" font-weight="700">3</text>
+    <text x="126" y="251">Live Projects</text>
+
+    <rect x="256" y="228" width="170" height="36" rx="6" fill="#121A2E" stroke="#26314A"/>
+    <text x="270" y="251" fill="#EAF0FA" font-size="15" font-weight="700">SQL·BI·ML</text>
+    <text x="352" y="251">Stack</text>
+
+    <rect x="440" y="228" width="180" height="36" rx="6" fill="#121A2E" stroke="#26314A"/>
+    <text x="454" y="251" fill="#EAF0FA" font-size="15" font-weight="700">Fresher</text>
+    <text x="524" y="251">→ Growing daily</text>
+  </g>
+</svg>

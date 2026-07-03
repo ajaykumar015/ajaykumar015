@@ -1,0 +1,66 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="500">
+      <stop offset="0%" stop-color="#0F1830"/>
+      <stop offset="100%" stop-color="#0A0F1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" rx="18" fill="url(#cbg)" stroke="#26314A"/>
+
+  <text x="40" y="55" font-family="'Segoe UI Semibold',Arial,sans-serif" font-size="26" font-weight="700" fill="#EAF0FA">Cancer Risk &amp; Severity Analysis</text>
+  <text x="40" y="80" font-family="Consolas,monospace" font-size="13" letter-spacing="2" fill="#F2B807">HEALTHCARE · MACHINE LEARNING</text>
+
+  <line x1="40" y1="100" x2="860" y2="100" stroke="#26314A"/>
+
+  <!-- scatter/classification plot -->
+  <g transform="translate(40,130)">
+    <rect width="500" height="300" rx="10" fill="#121A2E" stroke="#26314A"/>
+    <g stroke="#26314A" stroke-width="1">
+      <line x1="0" y1="60" x2="500" y2="60"/>
+      <line x1="0" y1="120" x2="500" y2="120"/>
+      <line x1="0" y1="180" x2="500" y2="180"/>
+      <line x1="0" y1="240" x2="500" y2="240"/>
+    </g>
+    <!-- decision boundary -->
+    <path d="M20,260 C150,220 250,150 480,40" fill="none" stroke="#F2B807" stroke-width="2.5" stroke-dasharray="6 5" opacity="0.85"/>
+    <!-- benign cluster -->
+    <g fill="#2FD3C8">
+      <circle cx="70" cy="230" r="6"/><circle cx="100" cy="250" r="6"/><circle cx="130" cy="210" r="6"/>
+      <circle cx="60" cy="190" r="6"/><circle cx="150" cy="240" r="6"/><circle cx="110" cy="270" r="6"/>
+      <circle cx="180" cy="200" r="6"/><circle cx="90" cy="270" r="6"/>
+    </g>
+    <!-- malignant cluster -->
+    <g fill="#F26D5B">
+      <circle cx="330" cy="90" r="6"/><circle cx="370" cy="60" r="6"/><circle cx="410" cy="100" r="6"/>
+      <circle cx="440" cy="50" r="6"/><circle cx="300" cy="130" r="6"/><circle cx="460" cy="80" r="6"/>
+      <circle cx="380" cy="120" r="6"/><circle cx="420" cy="30" r="6"/>
+    </g>
+    <text x="14" y="20" font-family="Consolas,monospace" font-size="11" fill="#7C8BA8">Tumor Feature Space — Benign vs Malignant</text>
+  </g>
+
+  <!-- side stat panel -->
+  <g transform="translate(570,130)" font-family="Consolas,monospace" fill="#EAF0FA">
+    <rect width="290" height="300" rx="10" fill="#121A2E" stroke="#26314A"/>
+    <text x="20" y="34" font-size="12" letter-spacing="2" fill="#7C8BA8">MODEL PERFORMANCE</text>
+
+    <text x="20" y="75" font-size="30" font-weight="700" fill="#2FD3C8">96.2%</text>
+    <text x="20" y="95" font-size="12" fill="#7C8BA8">Classification Accuracy</text>
+
+    <line x1="20" y1="115" x2="270" y2="115" stroke="#26314A"/>
+
+    <text x="20" y="145" font-size="12" fill="#7C8BA8">Precision</text>
+    <rect x="20" y="153" width="230" height="8" rx="4" fill="#1B2540"/>
+    <rect x="20" y="153" width="205" height="8" rx="4" fill="#2FD3C8"/>
+
+    <text x="20" y="185" font-size="12" fill="#7C8BA8">Recall</text>
+    <rect x="20" y="193" width="230" height="8" rx="4" fill="#1B2540"/>
+    <rect x="20" y="193" width="195" height="8" rx="4" fill="#F2B807"/>
+
+    <text x="20" y="225" font-size="12" fill="#7C8BA8">F1-Score</text>
+    <rect x="20" y="233" width="230" height="8" rx="4" fill="#1B2540"/>
+    <rect x="20" y="233" width="200" height="8" rx="4" fill="#F26D5B"/>
+
+    <text x="20" y="270" font-size="11" fill="#7C8BA8">Model: Random Forest / SVM</text>
+    <text x="20" y="288" font-size="11" fill="#7C8BA8">Eval: Stratified K-Fold CV</text>
+  </g>
+</svg>

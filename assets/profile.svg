@@ -1,0 +1,47 @@
+<svg viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ring1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2FD3C8"/>
+      <stop offset="100%" stop-color="#1B7F78"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#16213A"/>
+      <stop offset="100%" stop-color="#0A0F1E"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="460" height="460" fill="#0A0F1E"/>
+  <circle cx="230" cy="230" r="210" fill="url(#core)" stroke="#26314A"/>
+
+  <!-- orbit rings -->
+  <circle cx="230" cy="230" r="175" fill="none" stroke="#26314A" stroke-width="1.5" stroke-dasharray="2 6"/>
+  <circle cx="230" cy="230" r="145" fill="none" stroke="#26314A" stroke-width="1.5"/>
+
+  <!-- 4 skill nodes orbiting -->
+  <g font-family="Consolas,'SF Mono',monospace" font-size="13" fill="#EAF0FA">
+    <g transform="translate(230,55)">
+      <circle r="26" fill="#121A2E" stroke="#2FD3C8" stroke-width="2"/>
+      <text text-anchor="middle" y="5">SQL</text>
+    </g>
+    <g transform="translate(405,230)">
+      <circle r="26" fill="#121A2E" stroke="#F2B807" stroke-width="2"/>
+      <text text-anchor="middle" y="5">BI</text>
+    </g>
+    <g transform="translate(230,405)">
+      <circle r="26" fill="#121A2E" stroke="#2FD3C8" stroke-width="2"/>
+      <text text-anchor="middle" y="5">PY</text>
+    </g>
+    <g transform="translate(55,230)">
+      <circle r="26" fill="#121A2E" stroke="#F2B807" stroke-width="2"/>
+      <text text-anchor="middle" y="5">ML</text>
+    </g>
+  </g>
+
+  <!-- connecting orbit path -->
+  <circle cx="230" cy="230" r="175" fill="none" stroke="url(#ring1)" stroke-width="2" opacity="0.55"/>
+
+  <!-- monogram core -->
+  <circle cx="230" cy="230" r="95" fill="#0F1830" stroke="#2FD3C8" stroke-width="2"/>
+  <text x="230" y="248" text-anchor="middle" font-family="'Segoe UI Semibold','Segoe UI',Arial,sans-serif" font-size="72" font-weight="700" fill="#EAF0FA">AK</text>
+  <text x="230" y="278" text-anchor="middle" font-family="Consolas,'SF Mono',monospace" font-size="12" letter-spacing="2" fill="#7C8BA8">DATA · INSIGHT · DECISION</text>
+</svg>

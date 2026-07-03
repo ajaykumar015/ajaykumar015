@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#0A0F1E"/>
+      <stop offset="50%" stop-color="#0F1830"/>
+      <stop offset="100%" stop-color="#0A0F1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="180" fill="url(#fbg)"/>
+
+  <!-- fading pulse line, the recurring signature motif -->
+  <polyline points="0,120 100,90 200,130 300,70 400,110 500,50 600,95 700,40 800,85 900,55 1000,100 1100,65 1200,90"
+            fill="none" stroke="#2FD3C8" stroke-width="2.5" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="120" y1="70" x2="1080" y2="70" stroke="#26314A" stroke-width="1"/>
+
+  <text x="600" y="45" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-style="italic" fill="#EAF0FA">
+    "Data becomes valuable only when it helps someone make a better decision."
+  </text>
+
+  <text x="600" y="120" text-anchor="middle" font-family="Consolas,'SF Mono',monospace" font-size="14" letter-spacing="2" fill="#7C8BA8">
+    THANKS FOR STOPPING BY — LET'S TURN DATA INTO DECISIONS
+  </text>
+
+  <text x="600" y="150" text-anchor="middle" font-family="Consolas,'SF Mono',monospace" font-size="12" fill="#2FD3C8">
+    github.com/ajaykumar015
+  </text>
+</svg>

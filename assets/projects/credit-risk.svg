@@ -1,0 +1,72 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crbg" x1="0" y1="0" x2="0" y2="500">
+      <stop offset="0%" stop-color="#0F1830"/>
+      <stop offset="100%" stop-color="#0A0F1E"/>
+    </linearGradient>
+    <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2FD3C8"/>
+      <stop offset="50%" stop-color="#F2B807"/>
+      <stop offset="100%" stop-color="#F26D5B"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" rx="18" fill="url(#crbg)" stroke="#26314A"/>
+
+  <text x="40" y="55" font-family="'Segoe UI Semibold',Arial,sans-serif" font-size="26" font-weight="700" fill="#EAF0FA">Credit Risk &amp; Customer Financial Health</text>
+  <text x="40" y="80" font-family="Consolas,monospace" font-size="13" letter-spacing="2" fill="#F2B807">POWER BI · SQL · FINANCE</text>
+  <line x1="40" y1="100" x2="860" y2="100" stroke="#26314A"/>
+
+  <!-- KPI cards row -->
+  <g font-family="Consolas,monospace">
+    <g transform="translate(40,120)">
+      <rect width="190" height="90" rx="10" fill="#121A2E" stroke="#26314A"/>
+      <text x="16" y="30" font-size="11" fill="#7C8BA8">TOTAL CUSTOMERS</text>
+      <text x="16" y="65" font-size="26" font-weight="700" fill="#EAF0FA">12,480</text>
+    </g>
+    <g transform="translate(248,120)">
+      <rect width="190" height="90" rx="10" fill="#121A2E" stroke="#26314A"/>
+      <text x="16" y="30" font-size="11" fill="#7C8BA8">AVG CREDIT SCORE</text>
+      <text x="16" y="65" font-size="26" font-weight="700" fill="#2FD3C8">712</text>
+    </g>
+    <g transform="translate(456,120)">
+      <rect width="190" height="90" rx="10" fill="#121A2E" stroke="#26314A"/>
+      <text x="16" y="30" font-size="11" fill="#7C8BA8">DEFAULT RATE</text>
+      <text x="16" y="65" font-size="26" font-weight="700" fill="#F26D5B">4.6%</text>
+    </g>
+    <g transform="translate(664,120)">
+      <rect width="196" height="90" rx="10" fill="#121A2E" stroke="#26314A"/>
+      <text x="16" y="30" font-size="11" fill="#7C8BA8">HIGH-RISK SEGMENT</text>
+      <text x="16" y="65" font-size="26" font-weight="700" fill="#F2B807">8.2%</text>
+    </g>
+  </g>
+
+  <!-- risk gauge -->
+  <g transform="translate(60,240)">
+    <rect width="360" height="220" rx="10" fill="#121A2E" stroke="#26314A"/>
+    <text x="20" y="30" font-family="Consolas,monospace" font-size="11" letter-spacing="2" fill="#7C8BA8">PORTFOLIO RISK GAUGE</text>
+    <path d="M 60 170 A 120 120 0 0 1 300 170" fill="none" stroke="#1B2540" stroke-width="18"/>
+    <path d="M 60 170 A 120 120 0 0 1 300 170" fill="none" stroke="url(#gaugeGrad)" stroke-width="18" stroke-dasharray="330 660" opacity="0.9"/>
+    <line x1="180" y1="170" x2="240" y2="95" stroke="#EAF0FA" stroke-width="3"/>
+    <circle cx="180" cy="170" r="7" fill="#EAF0FA"/>
+    <text x="180" y="210" text-anchor="middle" font-family="Consolas,monospace" font-size="20" font-weight="700" fill="#EAF0FA">Moderate</text>
+  </g>
+
+  <!-- segmentation bar chart -->
+  <g transform="translate(450,240)">
+    <rect width="410" height="220" rx="10" fill="#121A2E" stroke="#26314A"/>
+    <text x="20" y="30" font-family="Consolas,monospace" font-size="11" letter-spacing="2" fill="#7C8BA8">CUSTOMER SEGMENTS</text>
+    <g font-family="Consolas,monospace" font-size="11" fill="#7C8BA8">
+      <rect x="30" y="60" width="330" height="18" rx="4" fill="#1B2540"/>
+      <rect x="30" y="60" width="260" height="18" rx="4" fill="#2FD3C8"/>
+      <text x="30" y="95">Low Risk — 68%</text>
+
+      <rect x="30" y="115" width="330" height="18" rx="4" fill="#1B2540"/>
+      <rect x="30" y="115" width="150" height="18" rx="4" fill="#F2B807"/>
+      <text x="30" y="150">Medium Risk — 24%</text>
+
+      <rect x="30" y="170" width="330" height="18" rx="4" fill="#1B2540"/>
+      <rect x="30" y="170" width="65" height="18" rx="4" fill="#F26D5B"/>
+      <text x="30" y="205">High Risk — 8%</text>
+    </g>
+  </g>
+</svg>
